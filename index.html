@@ -1,16 +1,147 @@
-<html>
-	<head>
-		<title>Learn css</title>
-		<style>
-		p{
-		color:red;
-		}
-		</style>
-	</head>
-		<body>
-			<h1 style="color:red;font-style:italic;text-align:center;">WELCOME USER</h1>
-			<div style="color:blue;background-color:yellow;padding:10;">
-			kjhsdifhydiufyhsduifyuiaydasjidhasiud
-			</div>
-			<p>asgetrweyrhjsdgfjaetruiwetyruiwer</p>
-		</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff20;
+            border: 2px solid #000;
+        }
+
+        h1 {
+            color: rgb(236, 13, 28);
+            background-color: rgb(231, 235, 9);
+            padding: 10px;
+            width: fit-content;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #b0aaaa;
+            border: 2px solid #000;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        td input[type="text"], td input[type="password"], td input[type="email"], td select, td input[type="file"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        td input[type="radio"], td input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .reset-btn, .submit-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: green;
+        }
+
+        .reset-btn:hover, .submit-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">WELCOME TO FRESHERS WORLD !!!</h1>
+
+            <table border="1">
+                <tr>
+                    <td colspan="2" style="text-align:center; background-color: #b0aaaa;"><strong>REGISTRATION FORM</strong></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td>
+                        <select id="age" name="age">
+                            <option value="">Select</option>
+                            <!-- Add age options here -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="retype-password">Retype Password</label></td>
+                    <td><input type="password" id="retype-password" name="retype-password"></td>
+                </tr>
+                <tr>
+                    <td>Select your security question</td>
+                    <td>
+                        <input type="radio" id="pet" name="security" value="pet">
+                        <label for="pet">What is your pet name?</label><br><hr>
+                        <input type="radio" id="friend" name="security" value="friend">
+                        <label for="friend">Who is your best friend?</label><br><hr>
+                        <input type="radio" id="color" name="security" value="color">
+                        <label for="color">What is your favourite color?</label><br><hr>
+                        <input type="radio" id="teacher" name="security" value="teacher">
+                        <label for="teacher">Who is your favourite teacher?</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="answer">Answer of Security Question</label></td>
+                    <td><input type="text" id="answer" name="answer"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Languages Known</td>
+                    <td>
+                        <input type="checkbox" id="malayalam" name="languages" value="malayalam">
+                        <label for="malayalam">Malayalam</label>
+                        <input type="checkbox" id="english" name="languages" value="english">
+                        <label for="english">English</label>
+                        <input type="checkbox" id="hindi" name="languages" value="hindi">
+                        <label for="hindi">Hindi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>Home</td>
+                    <input type="text">
+                </tr>
+                <tr>
+                    <td><label for="cv">Upload CV</label></td>
+                    <td><input type="file" id="cv" name="cv"></td>
+                </tr>
+                <tr class="buttons">
+                    <td><button type="reset" class="reset-btn" style="background-color: red; color: white; padding: 10px 20px; border: none; cursor: pointer;">Reset</button></td>
+                    <td><button type="submit" class="submit-btn" style="background-color: green; color: white; padding: 10px 20px; border: none; cursor: pointer;">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
